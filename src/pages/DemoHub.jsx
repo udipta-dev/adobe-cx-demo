@@ -51,7 +51,7 @@ export default function DemoHub() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-hub-bg flex flex-col">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#1B1B1F' }}>
       {/* Header */}
       <header className="px-8 py-6 border-b border-white/10">
         <div className="flex items-center gap-3">
