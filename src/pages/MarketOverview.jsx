@@ -76,7 +76,7 @@ export default function MarketOverview() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-sidebar flex flex-col">
+    <div className="min-h-screen bg-hub-bg flex flex-col">
       {/* Header */}
       <header className="px-8 py-6 border-b border-white/10">
         <div className="flex items-center justify-between">

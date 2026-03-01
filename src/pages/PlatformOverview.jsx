@@ -74,7 +74,7 @@ export default function PlatformOverview() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-sidebar">
+    <div className="min-h-screen bg-hub-bg">
       {/* Header */}
       <header className="px-8 py-6 border-b border-white/10">
         <div className="flex items-center justify-between">
