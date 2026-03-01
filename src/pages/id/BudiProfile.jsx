@@ -122,8 +122,17 @@ export default function BudiProfile() {
                     ds.color === 'green' ? 'bg-green-500' :
                     'bg-orange-500'
                   }`} />
-                  <div>
-                    <div className="text-sm font-medium text-text-primary">{ds.name}</div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-medium text-text-primary">{ds.name}</span>
+                      <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded ${
+                        ds.stack === 'existing'
+                          ? 'bg-gray-100 text-gray-600 border border-gray-200'
+                          : 'bg-blue-50 text-adobe-blue border border-blue-200'
+                      }`}>
+                        {ds.stack === 'existing' ? 'DEPLOYED' : 'NEW'} — {ds.tool}
+                      </span>
+                    </div>
                     <div className="text-xs text-text-secondary">{ds.description}</div>
                   </div>
                 </div>

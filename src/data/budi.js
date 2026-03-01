@@ -27,10 +27,10 @@ export const budi = {
   ],
 
   dataSources: [
-    { name: 'Paid Social', description: 'Instagram ad click, campaign source, creative variant', color: 'pink' },
-    { name: 'Landing Page', description: 'Page visit, time on page, form interaction', color: 'blue' },
-    { name: 'Lead Form', description: 'Name, email, phone, age, product interest', color: 'green' },
-    { name: 'Mobile App (Nascent)', description: 'App install, initial browsing, KYC attempt', color: 'orange' },
+    { name: 'Paid Social', description: 'Instagram ad click, campaign source, creative variant', color: 'pink', stack: 'new', tool: 'AEP + GenStudio' },
+    { name: 'Landing Page', description: 'Page visit, time on page, form interaction', color: 'blue', stack: 'existing', tool: 'AEM' },
+    { name: 'Lead Form', description: 'Name, email, phone, age, product interest', color: 'green', stack: 'new', tool: 'AEP SDK' },
+    { name: 'Mobile App (Nascent)', description: 'App install, initial browsing, KYC attempt', color: 'orange', stack: 'new', tool: 'AEP SDK' },
   ],
 
   progressiveTimeline: [

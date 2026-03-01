@@ -78,6 +78,28 @@ export default function DemoHub() {
             </p>
           </div>
 
+          {/* Platform Overview - full width */}
+          <button
+            onClick={() => navigate('/platform')}
+            className="group w-full bg-gradient-to-r from-adobe-red/10 to-purple-900/20 hover:from-adobe-red/20 hover:to-purple-900/30 border border-adobe-red/30 hover:border-adobe-red/50 rounded-xl p-5 text-left transition-all cursor-pointer mb-5 flex items-center justify-between"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-adobe-red/20 rounded-lg flex items-center justify-center">
+                <svg className="w-6 h-6 text-adobe-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L12 12.75l-5.571-3m11.142 0 4.179 2.25L12 17.25l-9.75-5.25 4.179-2.25m11.142 0 4.179 2.25L12 21.75l-9.75-5.25 4.179-2.25" />
+                </svg>
+              </div>
+              <div>
+                <span className="inline-block text-[10px] font-medium px-2 py-0.5 rounded-full bg-adobe-red/20 text-adobe-red mb-1">START HERE</span>
+                <h3 className="text-white text-lg font-semibold">One Adobe Platform</h3>
+                <p className="text-white/50 text-sm">See how every tool — existing and new — works together across the stack</p>
+              </div>
+            </div>
+            <svg className="w-5 h-5 text-white/30 group-hover:text-white/60 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+
           {/* Flow cards */}
           <div className="grid grid-cols-2 gap-5">
             {flows.map((flow) => (

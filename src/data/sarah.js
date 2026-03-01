@@ -27,11 +27,11 @@ export const sarah = {
   ],
 
   dataSources: [
-    { name: 'Core Banking (CRM)', description: 'Account details, balance, tenure, products held, branch interactions', color: 'blue' },
-    { name: 'AEM Web Interactions', description: 'Credit card page views, rate comparisons, time on site, content engagement', color: 'purple' },
-    { name: 'Mobile App Events', description: 'Login frequency, feature usage, in-app browsing, notification responses', color: 'green' },
-    { name: 'Adobe Analytics', description: 'Session data, conversion funnels, campaign touchpoints, referral sources', color: 'orange' },
-    { name: 'Consent & Governance', description: 'MAS-compliant consent records, channel preferences, data usage permissions', color: 'red' },
+    { name: 'Core Banking (CRM)', description: 'Account details, balance, tenure, products held, branch interactions', color: 'blue', stack: 'existing', tool: 'In-house CDP' },
+    { name: 'AEM Web Interactions', description: 'Credit card page views, rate comparisons, time on site, content engagement', color: 'purple', stack: 'existing', tool: 'AEM' },
+    { name: 'Mobile App Events', description: 'Login frequency, feature usage, in-app browsing, notification responses', color: 'green', stack: 'new', tool: 'AEP SDK' },
+    { name: 'Adobe Analytics', description: 'Session data, conversion funnels, campaign touchpoints, referral sources', color: 'orange', stack: 'existing', tool: 'Analytics' },
+    { name: 'Consent & Governance', description: 'MAS-compliant consent records, channel preferences, data usage permissions', color: 'red', stack: 'new', tool: 'AEP' },
   ],
 
   timeline: [

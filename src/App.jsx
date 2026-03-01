@@ -13,12 +13,15 @@ import IDAnalytics from './pages/id/IDAnalytics';
 import AgentOverview from './pages/agents/AgentOverview';
 import AudienceAgent from './pages/agents/AudienceAgent';
 import MarketOverview from './pages/MarketOverview';
+import PlatformOverview from './pages/PlatformOverview';
 
 export default function App() {
   return (
     <HashRouter>
       <Routes>
         <Route path="/" element={<DemoHub />} />
+        {/* Platform Overview */}
+        <Route path="/platform" element={<PlatformOverview />} />
         {/* SG Cross-Sell Flow */}
         <Route path="/sg/profile" element={<SarahProfile />} />
         <Route path="/sg/unified-profile" element={<SarahUnifiedProfile />} />
