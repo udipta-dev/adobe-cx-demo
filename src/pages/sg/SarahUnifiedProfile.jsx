@@ -12,11 +12,11 @@ const typeColors = {
 export default function SarahUnifiedProfile() {
   return (
     <DemoLayout flow="sg">
-      <div className="max-w-6xl mx-auto space-y-6">
+      <div className="max-w-6xl mx-auto space-y-5 animate-fadeIn">
         {/* Top: Identity + Attributes + Score */}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-5">
           {/* Identity Resolution */}
-          <div className="bg-bg-card rounded-xl border border-border p-6">
+          <div className="bg-bg-card rounded-lg border border-border p-5">
             <div className="flex items-center gap-2 mb-4">
               <h3 className="text-sm font-medium text-text-secondary">Identity Resolution</h3>
               <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">{sarah.identities.length} Sources Merged</span>
@@ -43,7 +43,7 @@ export default function SarahUnifiedProfile() {
           </div>
 
           {/* Key Attributes */}
-          <div className="bg-bg-card rounded-xl border border-border p-6">
+          <div className="bg-bg-card rounded-lg border border-border p-5">
             <h3 className="text-sm font-medium text-text-secondary mb-4">Key Attributes</h3>
             <div className="space-y-3">
               {[
@@ -76,9 +76,9 @@ export default function SarahUnifiedProfile() {
           </div>
 
           {/* AI Propensity Score */}
-          <div className="bg-bg-card rounded-xl border border-border p-6">
+          <div className="bg-bg-card rounded-lg border border-border p-5">
             <h3 className="text-sm font-medium text-text-secondary mb-4">AI Propensity Score</h3>
-            <div className="bg-gradient-to-br from-purple-50 to-red-50 rounded-xl p-5 text-center">
+            <div className="bg-gradient-to-br from-purple-50 to-red-50 rounded-lg p-5 text-center">
               <div className="text-xs text-text-secondary mb-2">{sarah.propensityProduct}</div>
               <div className="text-5xl font-bold text-text-primary mb-1">{sarah.propensityScore}</div>
               <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-adobe-red text-white">
@@ -99,7 +99,7 @@ export default function SarahUnifiedProfile() {
         </div>
 
         {/* Behavioral Events Timeline */}
-        <div className="bg-bg-card rounded-xl border border-border p-6">
+        <div className="bg-bg-card rounded-lg border border-border p-5">
           <h3 className="text-sm font-medium text-text-secondary mb-5">Behavioral Events Timeline</h3>
           <div className="space-y-0">
             {sarah.timeline.map((event, i) => (
@@ -133,7 +133,7 @@ export default function SarahUnifiedProfile() {
         </div>
 
         {/* Narrator callout */}
-        <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 flex items-start gap-3">
+        <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 flex items-start gap-3">
           <span className="text-lg">💬</span>
           <p className="text-sm text-purple-900">
             <strong>"No analyst ran a query. The AI flagged Sarah based on her patterns across web browsing, email engagement, and branch visits."</strong>

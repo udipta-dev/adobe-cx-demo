@@ -5,8 +5,11 @@
   --color-adobe-red-dark: #C9252D;
   --color-adobe-blue: #1473E6;
   --color-adobe-blue-dark: #0D66D0;
-  --color-sidebar: #1B1B1F;
-  --color-sidebar-hover: #2C2C30;
+  --color-sidebar: #FAFAFA;
+  --color-sidebar-hover: #F0F0F0;
+  --color-sidebar-text: #4B4B4B;
+  --color-sidebar-active: #1473E6;
+  --color-sidebar-header: #959595;
   --color-bg-primary: #F5F5F5;
   --color-bg-card: #FFFFFF;
   --color-text-primary: #2C2C2C;

@@ -4,10 +4,10 @@ import { budi } from '../../data/budi';
 export default function BudiProgressiveProfile() {
   return (
     <DemoLayout flow="id">
-      <div className="max-w-6xl mx-auto space-y-6">
-        <div className="grid grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto space-y-5 animate-fadeIn">
+        <div className="grid grid-cols-3 gap-5">
           {/* Left: Progressive Timeline */}
-          <div className="col-span-2 bg-bg-card rounded-xl border border-border p-6">
+          <div className="col-span-2 bg-bg-card rounded-lg border border-border p-5">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-sm font-medium text-text-secondary">Profile Building Over Time</h3>
               <span className="text-xs bg-amber-50 text-amber-700 px-2.5 py-0.5 rounded-full font-medium">
@@ -58,9 +58,9 @@ export default function BudiProgressiveProfile() {
           </div>
 
           {/* Right column */}
-          <div className="space-y-6">
+          <div className="space-y-5">
             {/* Identity Graph */}
-            <div className="bg-bg-card rounded-xl border border-border p-6">
+            <div className="bg-bg-card rounded-lg border border-border p-5">
               <div className="flex items-center gap-2 mb-4">
                 <h3 className="text-sm font-medium text-text-secondary">Identity Graph</h3>
                 <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">{budi.identities.length} IDs</span>
@@ -89,7 +89,7 @@ export default function BudiProgressiveProfile() {
             </div>
 
             {/* Comparison card */}
-            <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-xl border border-blue-200 p-5">
+            <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-lg border border-blue-200 p-5">
               <h4 className="text-xs font-semibold text-blue-900 mb-3">SG vs ID: Profile Maturity</h4>
               <div className="space-y-3">
                 <div>
@@ -117,7 +117,7 @@ export default function BudiProgressiveProfile() {
         </div>
 
         {/* Narrator callout */}
-        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex items-start gap-3">
+        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4 flex items-start gap-3">
           <span className="text-lg">💬</span>
           <p className="text-sm text-emerald-900">
             <strong>"Each interaction adds a new data point. The profile doesn't need to be complete to be useful — the platform starts personalizing from the very first touch."</strong>
