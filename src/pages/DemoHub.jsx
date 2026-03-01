@@ -80,6 +80,7 @@ export default function DemoHub() {
 
           {/* Platform Overview - full width */}
           <button
+            data-coach="platform-btn"
             onClick={() => navigate('/platform')}
             className="group w-full bg-gradient-to-r from-adobe-red/10 to-purple-900/20 hover:from-adobe-red/20 hover:to-purple-900/30 border border-adobe-red/30 hover:border-adobe-red/50 rounded-xl p-5 text-left transition-all cursor-pointer mb-5 flex items-center justify-between"
           >
@@ -105,6 +106,7 @@ export default function DemoHub() {
             {flows.map((flow) => (
               <button
                 key={flow.id}
+                data-coach={`${flow.id}-card`}
                 onClick={() => navigate(flow.path)}
                 className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 rounded-xl p-6 text-left transition-all cursor-pointer"
               >

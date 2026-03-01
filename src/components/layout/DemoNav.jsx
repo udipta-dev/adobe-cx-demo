@@ -27,6 +27,7 @@ export default function DemoNav() {
       </span>
 
       <button
+        data-coach={isLast ? 'hub-btn' : 'next-btn'}
         onClick={isLast ? goHome : goNext}
         className="flex items-center gap-1.5 text-sm text-adobe-blue hover:text-adobe-blue-dark font-medium transition-colors cursor-pointer"
       >

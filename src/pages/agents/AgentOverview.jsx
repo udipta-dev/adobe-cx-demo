@@ -50,6 +50,7 @@ export default function AgentOverview() {
             return (
               <button
                 key={agent.name}
+                {...(isFeatured ? { 'data-coach': 'audience-agent' } : {})}
                 onClick={() => isFeatured && navigate('/agents/audience')}
                 className={`text-left rounded-xl border p-5 transition-all ${
                   isFeatured

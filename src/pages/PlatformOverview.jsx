@@ -88,6 +88,7 @@ export default function PlatformOverview() {
             </div>
           </div>
           <button
+            data-coach="back-to-hub"
             onClick={() => navigate('/')}
             className="text-white/50 hover:text-white/80 text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
           >

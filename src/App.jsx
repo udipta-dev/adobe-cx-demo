@@ -1,4 +1,6 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { CoachProvider } from './context/CoachContext';
+import CoachOverlay from './components/CoachOverlay';
 import DemoHub from './pages/DemoHub';
 import SarahProfile from './pages/sg/SarahProfile';
 import SarahUnifiedProfile from './pages/sg/SarahUnifiedProfile';
@@ -18,28 +20,31 @@ import PlatformOverview from './pages/PlatformOverview';
 export default function App() {
   return (
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<DemoHub />} />
-        {/* Platform Overview */}
-        <Route path="/platform" element={<PlatformOverview />} />
-        {/* SG Cross-Sell Flow */}
-        <Route path="/sg/profile" element={<SarahProfile />} />
-        <Route path="/sg/unified-profile" element={<SarahUnifiedProfile />} />
-        <Route path="/sg/journey" element={<SGJourney />} />
-        <Route path="/sg/decisioning" element={<SGDecisioning />} />
-        <Route path="/sg/analytics" element={<SGAnalytics />} />
-        {/* ID Acquisition Flow */}
-        <Route path="/id/profile" element={<BudiProfile />} />
-        <Route path="/id/progressive-profile" element={<BudiProgressiveProfile />} />
-        <Route path="/id/journey" element={<IDJourney />} />
-        <Route path="/id/decisioning" element={<IDDecisioning />} />
-        <Route path="/id/analytics" element={<IDAnalytics />} />
-        {/* AI Agents */}
-        <Route path="/agents/overview" element={<AgentOverview />} />
-        <Route path="/agents/audience" element={<AudienceAgent />} />
-        {/* Market Overview */}
-        <Route path="/markets" element={<MarketOverview />} />
-      </Routes>
+      <CoachProvider>
+        <Routes>
+          <Route path="/" element={<DemoHub />} />
+          {/* Platform Overview */}
+          <Route path="/platform" element={<PlatformOverview />} />
+          {/* SG Cross-Sell Flow */}
+          <Route path="/sg/profile" element={<SarahProfile />} />
+          <Route path="/sg/unified-profile" element={<SarahUnifiedProfile />} />
+          <Route path="/sg/journey" element={<SGJourney />} />
+          <Route path="/sg/decisioning" element={<SGDecisioning />} />
+          <Route path="/sg/analytics" element={<SGAnalytics />} />
+          {/* ID Acquisition Flow */}
+          <Route path="/id/profile" element={<BudiProfile />} />
+          <Route path="/id/progressive-profile" element={<BudiProgressiveProfile />} />
+          <Route path="/id/journey" element={<IDJourney />} />
+          <Route path="/id/decisioning" element={<IDDecisioning />} />
+          <Route path="/id/analytics" element={<IDAnalytics />} />
+          {/* AI Agents */}
+          <Route path="/agents/overview" element={<AgentOverview />} />
+          <Route path="/agents/audience" element={<AudienceAgent />} />
+          {/* Market Overview */}
+          <Route path="/markets" element={<MarketOverview />} />
+        </Routes>
+        <CoachOverlay />
+      </CoachProvider>
     </HashRouter>
   );
 }
