@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-adobe-red: #E34850;
+  --color-adobe-red-dark: #C9252D;
+  --color-adobe-blue: #1473E6;
+  --color-adobe-blue-dark: #0D66D0;
+  --color-sidebar: #1B1B1F;
+  --color-sidebar-hover: #2C2C30;
+  --color-bg-primary: #F5F5F5;
+  --color-bg-card: #FFFFFF;
+  --color-text-primary: #2C2C2C;
+  --color-text-secondary: #6E6E6E;
+  --color-border: #E1E1E1;
+  --color-success: #12805C;
+  --color-warning: #E68619;
+  --color-info: #1473E6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Adobe Clean', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
