@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import DemoHub from './pages/DemoHub';
 import SarahProfile from './pages/sg/SarahProfile';
 import SarahUnifiedProfile from './pages/sg/SarahUnifiedProfile';
@@ -16,7 +16,7 @@ import MarketOverview from './pages/MarketOverview';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<DemoHub />} />
         {/* SG Cross-Sell Flow */}
@@ -37,6 +37,6 @@ export default function App() {
         {/* Market Overview */}
         <Route path="/markets" element={<MarketOverview />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
