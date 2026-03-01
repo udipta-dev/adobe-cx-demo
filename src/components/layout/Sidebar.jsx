@@ -133,8 +133,11 @@ export default function Sidebar({ flow }) {
 
   return (
     <aside className="w-60 bg-sidebar h-screen flex flex-col border-r border-border shrink-0">
-      {/* Adobe logo area */}
-      <div className="px-4 py-3 border-b border-border">
+      {/* Adobe logo area — clickable to go home */}
+      <div
+        className="px-4 py-3 border-b border-border cursor-pointer hover:bg-sidebar-hover transition-colors"
+        onClick={() => navigate('/')}
+      >
         <div className="flex items-center gap-2.5">
           <div className="w-7 h-7 bg-adobe-red rounded flex items-center justify-center">
             <span className="text-white text-xs font-bold">A</span>

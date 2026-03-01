@@ -80,7 +80,7 @@ export default function MarketOverview() {
       {/* Header */}
       <header className="px-8 py-6 border-b border-white/10">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-10 h-10 bg-adobe-red rounded-lg flex items-center justify-center">
               <span className="text-white text-lg font-bold">A</span>
             </div>
